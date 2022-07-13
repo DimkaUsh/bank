@@ -1,0 +1,173 @@
+
+{{> parts/head}}
+
+<body>
+
+	{{> parts/header-2}}
+	{{> parts/mob-menu}}
+
+	<div class="bread">
+		<div class="container">
+			<a href="#">Главная</a>
+			<span class="divider">/</span>
+			<span class="current">Подать объявление</span>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="column-main column-main-small">
+			<h2 class="h2">Подать объявление</h2>
+			
+			<form action="#">
+				
+			<div class="add-new">
+				<div class="input-line">
+					<div class="select-cont">
+						 <select>
+						  <option value="var0" selected disabled>Категория объявления</option>
+						  <option value="var1">2 месяца 16000 руб.</option>
+						  <option value="var2">2 месяца 18000 руб.</option>
+						  <option value="var3">2 месяца 20000 руб.</option>
+						</select> 
+					</div>
+					<div class="select-cont">
+						 <select>
+						  <option value="var0" selected disabled>Регионы оказания услуг</option>
+						  <option value="var1">2 месяца 16000 руб.</option>
+						  <option value="var2">2 месяца 18000 руб.</option>
+						  <option value="var3">2 месяца 20000 руб.</option>
+						</select> 
+					</div>
+				</div>
+				<div class="input-line one">
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Название объявления</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>
+				</div>
+				<div class="input-line three">
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Сумма займа</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Возраст заемщика</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Срок займа</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>
+				</div>
+				<div class="textarea-cont desc-short">
+					<textarea id="desc_short" name="text"  cols="30" rows="8" placeholder="Краткое описание объявления"></textarea>
+					<div class="desc">
+						<span class="count">150</span>
+						<span class="text">символов осталось до рекомендованного количества</span>
+					</div>
+				</div>
+				<div class="textarea-cont">
+					<textarea name="text"  cols="30" rows="10" placeholder="Полное описание объявления"></textarea>
+					<div class="desc">
+						Уникальность текста должна быть не менее 60%
+					</div>
+				</div>
+				<div class="input-line three">
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Имя</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Email адрес</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Телефон</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>
+				</div>
+				<div class="places">
+					<div class="name">
+						Площадки для размещения
+					</div>
+					<div class="place">
+						<label for="place1">
+							<div class="radio-cont">
+				  			<input id="place1" type="radio" name="paytypetype" value="manual">
+							</div>
+							<div class="img-cont">
+								<img src="./img/comp-1.png" alt="comp">
+							</div>
+						</label>
+					</div>
+					<div class="place">
+						<label for="place2">
+							<div class="radio-cont">
+				  			<input id="place2" type="radio" name="paytypetype" value="manual">
+							</div>
+							<div class="img-cont">
+								<img src="./img/comp-2.png" alt="comp">
+							</div>
+						</label>
+					</div>
+					<div class="place">
+						<label for="place3">
+							<div class="radio-cont">
+				  			<input id="place3" type="radio" name="paytypetype" value="manual">
+							</div>
+							<div class="img-cont">
+								<img src="./img/comp-3.png" alt="comp">
+							</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="gray-line hidden-xs"></div>
+				<div class="btns-cont">
+					<div class="btn disabled">Выбрать услуги</div>
+					<div class="accept">
+						При размещении объявления <br class="visible-xs">Вы соглашаетесь со следующими<br>
+						<a href="#" class="link-underline">Пользовательскими соглашениями</a>
+					</div>
+				</div>
+				</div>
+
+
+
+			</form>
+		</div>
+	</div>
+
+
+	{{> parts/footer}}
+
+	{{!-- {{> small_parts/up_btn}} --}}
+	{{!-- {{> small_parts/burger_with_anim}} --}}
+	{{!-- {{> components/tabs tabsContent}} --}}
+	{{!-- {{> components/popup}} --}}
+
+	{{> parts/scripts}}
+
+</body>
+</html>

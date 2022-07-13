@@ -1,0 +1,152 @@
+
+{{> parts/head}}
+
+<body>
+
+	{{> parts/header-2}}
+	{{> parts/mob-menu}}
+
+	<div class="container">
+		<div class="column-main column-sett">
+			<h2 class="h2 first">Настройки</h2>
+
+			<div class="settings">
+				
+				<h3 class="h3">Контактная информация</h3>
+				<div class="input-line">
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Имя</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>
+					
+				</div>
+				<div class="input-line">
+					<div class="select-cont">
+						 <select>
+						  <option value="var0" selected disabled>Пол</option>
+						  <option value="var1">Мужской</option>
+						  <option value="var3">Женский</option>
+						</select> 
+					</div>
+					
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Город</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>
+				</div>
+				<div class="input-line">
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Телефоны</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Email</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>
+					
+				</div>
+
+				<h3 class="h3">Смена пароля</h3>
+				<div class="text">
+					Введите свой текущий пароль, новый пароль, и повторите ввод нового пароля,
+					чтобы исключить возможность опечатки.
+				</div>
+				<div class="input-line">
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Текущий пароль</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>					
+				</div>
+				<div class="input-line">
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Новый пароль</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>					
+				</div>
+				<div class="input-line">
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Повторите пароль</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+					</div>					
+				</div>
+				<h3 class="h3 last">Настройки уведомлений</h3>
+				<div class="checkbox-cont">
+					<input type="checkbox" id="check1">
+					<label for="check1">
+						<span class="check">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="text">
+							Оповещение о заканчивающемся периоде
+						</span>
+					</label>
+				</div>
+				<div class="checkbox-cont">
+					<input type="checkbox" id="check2">
+					<label for="check2">
+						<span class="check">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="text">
+							Оповещение при понижении позиции
+						</span>
+					</label>
+				</div>
+				<div class="checkbox-cont">
+					<input type="checkbox" id="check3">
+					<label for="check3">
+						<span class="check">
+							<i class="fa fa-check"></i>
+						</span>
+						<span class="text">
+							SMS оповещение
+						</span>
+					</label>
+				</div>
+				<div class="btns">
+					<a href="#" class="btn btn-big-pad">Сохранить</a>
+				</div>
+				<h3 class="h3">Удаление аккаунта</h3>
+				<div class="text">Если вы хотите навсегда удалить свою учетную запись и все свои объявления,
+				то нажмите кнопку &#xab;Удалить учётную запись&#xbb;</div>
+
+				<div class="btns">
+					<a href="#" class="btn btn-outline">Удалить учётную запись</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	{{> parts/footer}}
+
+	{{!-- {{> small_parts/up_btn}} --}}
+	{{!-- {{> small_parts/burger_with_anim}} --}}
+	{{!-- {{> components/tabs tabsContent}} --}}
+	{{!-- {{> components/popup}} --}}
+
+	{{> parts/scripts}}
+
+</body>
+</html>

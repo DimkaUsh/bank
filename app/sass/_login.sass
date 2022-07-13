@@ -1,0 +1,146 @@
+.section-login
+	width: 100vw
+	height: 100vh
+	@include md{min-height: 100%; height: auto;display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex;align-items: stretch}
+	@include xs{display: block; position: relative
+	background: linear-gradient(to bottom, #eff6fa , #f6fafc 100%);	}
+	.copy
+		position: absolute
+		bottom: 48px
+		right: 170px
+		color: #9ea4b0
+		font-size: 14px
+		width: 310px
+		display: none
+		@include xs{left: 20px
+		bottom: 30px;display: block}
+	.login-left
+		float: left
+		height: 100%
+		width: 44%
+		background: linear-gradient(to bottom, #eff6fa , #f6fafc 100%);
+		position: relative
+		@include md{height: auto;width: 50%;min-height: 100vh;float: none}
+		@include xs{background: none;width: 100%;min-height: auto;display: block}
+		.copy
+			display: block
+			@include md{bottom: 33px}
+			@include md{right: 65px}
+			@include xs{display: none}
+		.content
+			width: 310px
+			position: absolute
+			top: 45%
+			transform: translateY(-50%)
+			right: 170px
+			@include md{right: 65px}
+			@include xs{right: auto;top: 0;transform: none
+			padding-top: 15px;padding-left: 20px
+			padding-right: 20px;width: 320px; margin: 0 auto;position: relative}
+			.logo
+				font-weight: bold
+				font-size: 35px
+				line-height: 1
+				color: #779b9d
+				margin-bottom: -4px
+				@include xs{}
+			.h1
+				color: #4c515c
+				font-weight: bold
+				font-size: 18px
+				line-height: 1.26
+				margin-bottom: 24px
+				@include xs{font-size: 17px}
+			.sign-up-desc
+				color: #74777f
+				font-size: 14px
+	.login-right
+		float: right
+		width: 56%
+		padding-left: 139px
+		position: relative
+		height: 100%
+		@include md{width: 50%;min-height: 100vh;padding-left: 60px;;float: none}
+		@include xs{width: 100%;min-height: auto;padding-left: 0
+		padding-bottom: 120px}
+		.login__form
+			width: 250px
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			@include md{padding-top: 80px
+			padding-bottom: 120px;position: relative
+			top: 0
+			transform: none}
+			@include xs{width: 280px;margin: 0 auto}
+
+.login__form
+	.capcha
+		margin-top: 30px
+		width: 100%
+		img
+			width: 100%
+	.name
+		font-weight: bold
+		font-size: 30px
+		line-height: 1.2
+		color: $c-text-dark
+		margin-bottom: 15px
+		@include xs{font-size: 24px;margin-top: -26px}
+	.input-cont
+		margin-top: 20px
+		margin-bottom: 16px
+	.btn
+		margin-top: 30px
+		display: block
+		width: 100%
+		margin-bottom: 10px
+	.login__or
+		text-align: center
+		color: #dae0e1
+		margin-top: 45px
+		margin-bottom: 25px
+		@include xs{margin-top: 25px}
+		span
+			&:after
+				vertical-align: middle
+				display: inline-block
+				content: ''
+				height: 1px
+				width: 48px
+				margin: 0 5px
+				background-color: #dae0e1
+			&:before
+				vertical-align: middle
+				display: inline-block
+				content: ''
+				height: 1px
+				width: 48px
+				margin: 0 5px
+				background-color: #dae0e1
+	.socials
+		a
+			width: 114px
+			height: 45px
+			display: inline-block
+			text-align: center
+			border-radius: 3px
+			border: 1px solid #919191
+			position: relative
+			@include xs{width: 130px}
+			img
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+			&:hover
+				border-color: #58898c
+				background: #fafeff
+		a:first-child
+			float: left
+		a:last-child
+			float: right

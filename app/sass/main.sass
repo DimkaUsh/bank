@@ -1,0 +1,318 @@
+@import "fonts"
+@import "vars"
+
+@import "_mixins/media-mix"
+
+*::-webkit-input-placeholder
+	color: $c-placeholder
+	opacity: 1
+
+*:-moz-placeholder
+	color: $c-placeholder
+	opacity: 1
+
+*::-moz-placeholder
+	color: $c-placeholder
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: $c-placeholder
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: $c-placeholder
+body input:required:valid,
+body textarea:required:valid
+	color: $c-placeholder
+
+html, body
+	height: 100%
+
+body
+	font-size: $f-size
+	min-width: 320px
+	position: relative
+	line-height: 1.3
+	font-family: $r
+	overflow-x: hidden
+	opacity: 1
+	// min-height: 100wh
+	@include xs{font-size: 14px}
+	&.noscroll
+		overflow-y: hidden
+
+textarea:focus, 
+input:focus
+    outline: none
+
+a 
+	outline: none
+	color: $c-link
+	&:hover,
+	&:focus
+		text-decoration: none
+		color: $c-link-h
+		
+.link-underline	
+	color: #779b9d
+	text-decoration: underline
+	font-size: 14px
+
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+	li
+		margin: 0
+		padding: 0
+
+p
+	line-height: 24px
+	font-size: $f-size
+	margin-bottom: 22px
+	@include xs{font-size: 14px}
+
+form
+	input[type="text"],
+	input[type="email"],
+	textarea
+		// border: none
+		// display: inline-block
+		// border: #ebebeb 1px solid
+		// border-radius: 3px
+		// padding: 5px 10px 0px
+
+.h2
+	font-size: 30px
+	line-height: 24px
+	font-weight: 600
+
+.img-fluid
+	display: block
+	width: 100%
+	height: auto
+
+.accent
+	color: $c-a
+
+.btn,
+input[type="submit"]
+	display: inline-block
+	background-color: $c-btn
+	line-height: 1.65
+	color: #FFFFFF
+	font-size: $f-size
+	text-align: center
+	border-radius: 0
+	font-weight: 400
+	border-radius: 4px
+	padding: 10px 21px 10px
+	transition: background-color 0.4s, border 0.4s
+	text-transform: none
+	border: solid 1px $c-btn
+	&:hover,
+	&:active,
+	&:focus
+		color: #FFFFFF
+		background-color: $c-btnh
+		border-color: $c-btnh
+	&.btn-outline
+		border-color: $c-border
+		background-color: transparent
+		color: #474747
+		&:hover,
+		&:active
+			background-color: $c-a
+			color: #fff
+			border-color: $c-a
+	&.disabled
+		color: $c-b	
+		// font-weight: 500
+		background-color: #659c9f
+	&.btn-back
+		background-color: transparent
+		border-color: transparent
+		color: $c-text-dark
+		i
+			font-size: 14px
+			margin-right: 6px
+		&:hover
+			color: $c-a
+	&.btn-red
+		background-color: $c-a-r
+		border-color: $c-a-r
+		color: #fff
+		&:hover,
+		&:active,
+		&:focus
+			background-color: #DA6D3E;
+	&.btn-fluid
+		@include md{font-size: 14px;padding: 5px 17px}
+	&.btn-big-pad
+		padding-left: 40px
+		padding-right: 40px
+
+.icon
+	overflow: hidden
+	background-image: url('../img/icons.png')
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	&.search
+		width: 12px
+		height: 12px
+		background-position: 0px -10px
+
+.container	
+	width: 1180px
+	padding: 0
+	@include md{width: 728px}
+	@include xs{width: 100%;padding: 0 15px}
+	&.container-table
+		@include xs{padding-right: 0}
+
+.bread
+	padding-top: 115px
+	color: $c-text-dark
+	margin-bottom: 10px
+	@include md{padding-top: 50px;font-size: 14px}
+	@include xs{margin-bottom: 4px}
+	.divider
+		margin: 0 2px
+	.current
+		color: #9ea4b0
+	
+@import "header"
+@import "sections"
+@import "login"
+@import "main-column"
+
+//Бургер с анимацией
+@import "_small_parts/burger_with_anim"
+
+//Кнопка наверх
+// @import "_small_parts/up_btn"
+
+//Овелей
+// @import "_small_parts/overlay"
+
+//POPUP
+// @import "_small_parts/popup"
+
+//Табы
+// @import "_components/tabs"
+
+//Popup
+@import "_components/popup"
+
+input[type='number'] 
+	-moz-appearance: textfield;
+.blau
+	color: #5d8bf0
+
+
+.input-cont
+	margin-top: 20px
+	margin-bottom: 16px
+	position: relative
+	&:after
+		content: ''
+		background-color: #9ea4b0
+		display: block
+		top: 100%
+		width: 100%
+		height: 1px
+	input
+		border: none
+		padding: 10px 0
+		// background-color: red
+		width: 100%
+		display: block
+		border-radius: 0
+		background-color: transparent
+		position: relative
+		z-index: 1
+		@include xs{font-size: 16px;padding: 8px 0}
+	.fa-rub
+		position: absolute
+		right: 0
+		font-size: 14px
+		bottom: 12px
+		color: $c-text-dark
+	.placeholder
+		position: absolute
+		top: 10px
+		color: #9ea4b0
+		transition: transform 0.5s, font-size 0.4s
+		z-index: 0
+		&.active
+			font-size: 12px
+			transform: translateY(-16px)
+	.underline
+		position: absolute
+		bottom: 0
+		height: 2px
+		width: 100%
+		background-color: #456efb
+		transform: scaleX(0)
+		transition: transform 0.5s
+		transform-origin: center
+	&.anim
+		&.active
+			.placeholder
+				color: #456efb
+			.underline
+				transform: scaleX(1)
+	input:required,
+	input:invalid
+		box-shadow: none
+	.ok,
+	.err
+		position: absolute
+		right: 0
+		font-size: 14px
+		top: 13px
+		display: none
+	.ok
+		color: #82c462
+	.err
+		color: #a13f3f	
+	&.ok
+		.ok
+			display: block
+	&.err
+		.err
+			display: block
+		.underline
+			background-color: #a13f3f
+			transform: scaleX(1)
+		.placeholder
+			color: #a13f3f !important
+
+.radio-cont
+	position: relative
+	width: 17px
+	height: 17px
+	&:after
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		content: ''
+		display: block
+		border: #969696 1px solid
+		border-radius: 50%
+	&.active:after
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		content: ''
+		display: block
+		border: $c-a 5px solid
+		border-radius: 50%
+	input[type='radio']
+		display: none		

@@ -1,0 +1,11 @@
+{
+  "name": "optimizedhtml",
+  "description": "Start",
+  "main": "index.js",
+  "license": "ISC",
+  "ignore": ["**/.*", "node_modules", "bower_components", "app/libs/", "test", "tests"],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Имя сайта</title>
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/selectric/src/selectric.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body>
+
+	<header class="header active fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="header__burger-cont">
+						<div class="burger">
+							<span> </span>
+							<span> </span>
+							<span> </span>
+						</div>				</div>
+					<a href="#" class="header__logo">
+						Logo
+					</a>
+					<div class="header__user">
+						<div class="user__name">Руслан</div>
+						<div class="user__img">
+							<img src="./img/user2.svg" alt="user" class="default">
+						</div>
+						<div class="user__arrow">
+							<i class="fa fa-angle-down"></i>
+							<i class="fa fa-angle-up disable"></i>
+						</div>
+					</div>
+					<div class="header__user-menu">
+						<ul>
+							<li><a href="#">Кошелёк</a></li>
+							<li><a href="#">История операций</a></li>
+							<li><a href="#">Настройки</a></li>
+							<li class="gray-line"></li>
+							<li><a href="#">Выход</a></li>
+						</ul>
+					</div>
+					<div class="header__btns">
+						<div class="btn btn-fluid">Подать объявление</div>
+					</div>
+					<ul class="header__menu fluid">
+						<li><a href="#">Баланс: <span class="accent">16 000 руб.</span></a></li>
+						<li><a href="#">Мои объявления</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>	<div id="mob-menu">
+		<div class="mob-cont">
+			<div class="mob-close">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="header__logo">
+				Logo
+			</div>
+			<div class="header__user">
+				<div class="user__img">
+					<img src="./img/user2.svg" alt="user" class="default">
+				</div>
+				<div class="user__name">Руслан</div>
+			</div>
+			<div class="balance">
+				Баланс: <div class="accent">16 000 руб.</div>
+			</div>
+			<div class="btns-cont">
+				<div class="btn btn-fluid">Подать объявление</div>
+			</div>
+			<ul class="menu">
+				<li><a href="#">Кошелёк</a></li>
+				<li><a href="#">Мои объявления</a></li>
+				<li><a href="#">История операций</a></li>
+				<li><a href="#">Настройки</a></li>
+			</ul>
+			<div class="menu-footer">
+				<a href="#">Выход</a>
+			</div>
+		</div>
+	</div>
+	<div id="menu-over"></div>
+	<div class="bread">
+		<div class="container">
+			<a href="#">Главная</a>
+			<span class="divider">/</span>
+			<a href="#">Подать объявление</a>
+			<span class="divider">/</span>
+			<span class="current">Выбор услуги</span>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="column-main">
+			<h2 class="h2">Выбор услуг</h2>
+			<div class="pay-services">
+				<div class="pay-service active">
+					<div class="pay-service__img">
+						<img src="./img/rocket.png" alt="img">
+					</div>
+					<div class="pay-service__name">
+						VIP Объявление
+					</div>
+					<div class="pay-service__select-cont">
+						 <select>
+						  <option value="var1">2 месяца 16000 руб.</option>
+						  <option value="var2">2 месяца 18000 руб.</option>
+						  <option value="var3">2 месяца 20000 руб.</option>
+						</select> 
+					</div>
+					<div class="pay-service__select-cont">
+						 <select>
+						  <option value="var1">2 месяца 16000 руб.</option>
+						  <option value="var2">2 месяца 18000 руб.</option>
+						  <option value="var3">2 месяца 20000 руб.</option>
+						</select>
+						<div class="select-desc">Сейчас ваше место 5</div> 
+					</div>
+				</div>
+				<div class="pay-service pin">
+					<div class="pay-service__img">
+						<img src="./img/pin.png" alt="img">
+					</div>
+					<div class="pay-service__name">
+						Закрепить
+					</div>
+					<div class="pay-service__select-cont">
+						 <select>
+						  <option value="var0" selected disabled>Выберите место</option>
+						  <option value="var1">2 месяца 16000 руб.</option>
+						  <option value="var2">2 месяца 18000 руб.</option>
+						  <option value="var3">2 месяца 20000 руб.</option>
+						</select> 
+					</div>
+				</div>
+
+			</div>
+			<div class="gray-line"></div>
+			<div class="results">
+				ИТОГО: <span class="price">32 000 руб.</span>
+			</div>
+			<div class="btns-cont">
+				<div class="btn btn-back"><i class="fa fa-long-arrow-left"></i> Назад</div>
+				<div class="btn btn-big-pad">Оплатить</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="column-icons">
+				<div class="foot-icon"><img src="./img/foot-1.png" alt="foot"></div>
+				<div class="foot-icon"><img src="./img/foot-2.png" alt="foot"></div>
+				<div class="foot-icon"><img src="./img/foot-3.png" alt="foot"></div>
+			</div>
+			<div class="column">
+				<div class="name">Информация <i class="fa fa-chevron-down active"></i><i class="fa fa-chevron-up "></i></div>
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Правила</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Соглашение</a></li>
+					<li><a href="#">Конфиденциальность</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<div class="name">Аккаунт <i class="fa fa-chevron-down active"></i><i class="fa fa-chevron-up"></i></div>
+				<ul>
+					<li><a href="#">Войти</a></li>
+					<li><a href="#">Регистрация</a></li>
+					<li><a href="#">Забыл пароль</a></li>
+					<li><a href="#">Тарифы</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<div class="name">Служба поддержки</div>
+				<div class="btn btn-outline">
+					Задать вопрос
+				</div>
+				<a href="mailto:help@mrcredit.ru">
+					help@mrcredit.ru
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="copy">
+				&copy; 2017 Mr. Credit
+			</div>
+		</div>
+	</footer>
+
+		<script src="libs/jquery/dist/jquery.min.js"></script>
+		<script src="libs/selectric/src/jquery.selectric.js"></script>
+		<script src="js/scripts.min.js"></script>
+</body>
+</html>

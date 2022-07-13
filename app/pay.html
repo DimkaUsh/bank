@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Имя сайта</title>
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="libs/selectric/src/selectric.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body>
+
+	<header class="header active fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="header__burger-cont">
+						<div class="burger">
+							<span> </span>
+							<span> </span>
+							<span> </span>
+						</div>				</div>
+					<a href="#" class="header__logo">
+						Logo
+					</a>
+					<div class="header__user">
+						<div class="user__name">Руслан</div>
+						<div class="user__img">
+							<img src="./img/user2.svg" alt="user" class="default">
+						</div>
+						<div class="user__arrow">
+							<i class="fa fa-angle-down"></i>
+							<i class="fa fa-angle-up disable"></i>
+						</div>
+					</div>
+					<div class="header__user-menu">
+						<ul>
+							<li><a href="#">Кошелёк</a></li>
+							<li><a href="#">История операций</a></li>
+							<li><a href="#">Настройки</a></li>
+							<li class="gray-line"></li>
+							<li><a href="#">Выход</a></li>
+						</ul>
+					</div>
+					<div class="header__btns">
+						<div class="btn btn-fluid">Подать объявление</div>
+					</div>
+					<ul class="header__menu fluid">
+						<li><a href="#">Баланс: <span class="accent">16 000 руб.</span></a></li>
+						<li><a href="#">Мои объявления</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>	<div id="mob-menu">
+		<div class="mob-cont">
+			<div class="mob-close">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="header__logo">
+				Logo
+			</div>
+			<div class="header__user">
+				<div class="user__img">
+					<img src="./img/user2.svg" alt="user" class="default">
+				</div>
+				<div class="user__name">Руслан</div>
+			</div>
+			<div class="balance">
+				Баланс: <div class="accent">16 000 руб.</div>
+			</div>
+			<div class="btns-cont">
+				<div class="btn btn-fluid">Подать объявление</div>
+			</div>
+			<ul class="menu">
+				<li><a href="#">Кошелёк</a></li>
+				<li><a href="#">Мои объявления</a></li>
+				<li><a href="#">История операций</a></li>
+				<li><a href="#">Настройки</a></li>
+			</ul>
+			<div class="menu-footer">
+				<a href="#">Выход</a>
+			</div>
+		</div>
+	</div>
+	<div id="menu-over"></div>
+	<div class="bread">
+		<div class="container">
+			<a href="#">Главная</a>
+			<span class="divider">/</span>
+			<a href="#">Подать объявление</a>
+			<span class="divider">/</span>
+			<a href="#">Выбор услуги</a>
+			<span class="divider">/</span>
+			<span class="current">Способ оплаты</span>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="column-main">
+			<h2 class="h2">Способ оплаты</h2>
+			<div class="type-of-pay">
+				<form action="">
+					<div class="types">
+						<div class="type dropdown">
+		  				<label for="manual">
+								<div class="radio-cont">
+					  			<input id="manual" type="radio" name="paytypetype" value="manual">
+								</div>
+								<div class="name">
+									Ручной
+								</div>
+								<div class="desc">
+									Проверка платежа и зачисление средств на баланс происходит в ручном режиме нашим сотрудником. Комиссия отсутствует.
+								</div>
+								<div class="desc-accept">
+									<span class="blau">К оплате принимаем: </span>
+									Карта Сбербанка, Qiwi Кошелёк, Яндекс.Деньги, WebMoney/
+								</div>
+							</label>
+							<div class="dropdown-cont">
+								<div class="text">
+									Для пополнения своего баланса переведите деньги наиболее удобным для вас способом на один из указанных счетов. После успешной отправки средств введите в поле ввода
+									сумму, которую вы перевели, и нажмите кнопку &#xab;Оплатить&#xbb;. Подтверждение оплаты проводим в ручном режиме, это занимает от 5 минут, до нескольких часов.
+								</div>
+								<table>
+									<tr>
+										<td>
+											<label for="type1">
+												<div class="radio-cont">
+									  			<input id="type1" type="radio" name="type" value="manual">
+												</div>
+												Карта Сбербанка
+											</label>
+										</td>
+										<td>4242 4242 4242 4242</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="type2">
+												<div class="radio-cont">
+									  			<input id="type2" type="radio" name="type" value="manual">
+												</div>
+												Qiwi Кошелёк
+											</label>
+										</td>
+										<td>+79029999999</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="type3">
+												<div class="radio-cont">
+									  			<input id="type3" type="radio" name="type" value="manual">
+												</div>
+												Яндекс.Деньги
+											</label>
+										</td>
+										<td>41001173 3328 564</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="type4">
+												<div class="radio-cont">
+									  			<input id="type4" type="radio" name="type" value="manual">
+												</div>
+												WebMoney
+											</label>
+										</td>
+										<td>R123456789456123</td>
+									</tr>
+								</table>
+								<div class="attention">
+									Внимание! Прежде чем нажать кнопку "Оплатить", убедитесь, 
+									что вы перевели нужную сумму на один из указанных выше счетов.
+								</div>
+							</div>
+						</div>
+						<div class="type ">
+			  			<label for="auto">
+								<div class="radio-cont">
+				  				<input id="auto" type="radio" name="paytypetype" value="auto">
+								</div>
+								<div class="name">
+									Автоматический (Яндекс.Деньги)
+								</div>
+								<div class="desc">
+									Плюс метода в экономии времени, т. к. оплата происходит моментально через сервис 
+									<a href="#" class="link-underline">Яндекс.Деньги</a> и средства на баланс зачисляются моментально.
+								</div>	
+							</label>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="gray-line"></div>
+			<div class="results">
+				ИТОГО: <span class="price">32 000 руб.</span>
+			</div>
+			<div class="btns-cont">
+				<div class="btn btn-back"><i class="fa fa-long-arrow-left"></i> Назад</div>
+				<div class="btn btn-big-pad">Оплатить</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="footer">
+		<div class="container">
+			<div class="column-icons">
+				<div class="foot-icon"><img src="./img/foot-1.png" alt="foot"></div>
+				<div class="foot-icon"><img src="./img/foot-2.png" alt="foot"></div>
+				<div class="foot-icon"><img src="./img/foot-3.png" alt="foot"></div>
+			</div>
+			<div class="column">
+				<div class="name">Информация <i class="fa fa-chevron-down active"></i><i class="fa fa-chevron-up "></i></div>
+				<ul>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Правила</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Соглашение</a></li>
+					<li><a href="#">Конфиденциальность</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<div class="name">Аккаунт <i class="fa fa-chevron-down active"></i><i class="fa fa-chevron-up"></i></div>
+				<ul>
+					<li><a href="#">Войти</a></li>
+					<li><a href="#">Регистрация</a></li>
+					<li><a href="#">Забыл пароль</a></li>
+					<li><a href="#">Тарифы</a></li>
+				</ul>
+			</div>
+			<div class="column">
+				<div class="name">Служба поддержки</div>
+				<div class="btn btn-outline">
+					Задать вопрос
+				</div>
+				<a href="mailto:help@mrcredit.ru">
+					help@mrcredit.ru
+				</a>
+			</div>
+			<div class="clearfix"></div>
+			<div class="copy">
+				&copy; 2017 Mr. Credit
+			</div>
+		</div>
+	</footer>
+
+		<script src="libs/jquery/dist/jquery.min.js"></script>
+		<script src="libs/selectric/src/jquery.selectric.js"></script>
+		<script src="js/scripts.min.js"></script>
+</body>
+</html>

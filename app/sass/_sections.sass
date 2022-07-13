@@ -1,0 +1,216 @@
+.h2
+	text-align: center
+	font-weight: bold
+	font-size: 30px
+	line-height: 1.3
+	color: $c-text-dark
+	margin-bottom: 40px
+	@include xs{font-size: 24px
+	margin-bottom: 30px}
+
+.section-top
+	height: 750px
+	background: linear-gradient(to bottom, #edf6fa , #fff);
+	@include md{height: auto
+	margin-bottom: 80px}
+	@include xs{margin-bottom: 40px}
+	.container
+		height: 100%
+		position: relative
+	.content
+		position: absolute
+		left: 30px
+		top: 50%
+		transform: translateY(-50%)
+		width: 370px
+		@include md{position: relative
+		text-align: center
+		width: 80%
+		top: 130px
+		margin: 0 auto 30px
+		transform: none}
+		@include xs{width: 100%;left: 0;top: 82px}
+		.h1
+			font-weight: bold
+			font-size: 30px
+			line-height: 1.25
+			color: $c-text-dark
+			margin-bottom: 25px
+			@include xs{font-size: 24px;line-height: 1.3}
+		.text
+			color: $c-text
+			margin-bottom: 32px
+			@include md{width: 80%
+			margin: 0px auto 29px}
+			@include xs{width: 100%;margin-bottom: 25px}
+	.img-cont
+		width: 670px
+		float: right
+		margin-top: 150px
+		@include xs{width: 100vw
+		float: none
+		margin-top: 118px
+		position: relative
+		left: -15px}
+		img
+			width: 100%
+			height: auto
+
+.section-features
+	padding-bottom: 30px
+	@include xs{padding-bottom: 0}
+	.features
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		@include xs{flex-direction: column}
+	.feature
+		border: 1px solid #9bb7c2
+		width: 288px
+		height: 268px
+		margin: 0 25px 42px
+		text-align: center
+		padding-top: 29px
+		@include xs{width: 290px
+		margin: 0 auto 40px}
+		.feature__img-cont
+			width: 58px
+			height: 58px
+			display: inline-block
+			background-color: #a6c0c5
+			border-radius: 50%
+			padding-top: 17px
+			margin-bottom: 25px
+		.feature__name
+			text-transform: uppercase
+			color: $c-text-dark
+			font-weight: bold
+			font-size: 20px
+			margin-bottom: 20px
+		.feature__text
+			padding: 0 40px
+			color: #74777f
+			@include xs{font-size: 16px}
+
+.section-places
+	padding-bottom: 95px
+	@include xs{padding-bottom: 60px}
+	.places
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: center
+		@include xs{flex-wrap: wrap}
+		.place
+			align-items: center
+			margin: 0 40px
+			position: relative
+			@include xs{margin: 0 10px 20px}
+
+.footer
+	background-color: $c-footer
+	padding-top: 55px
+	padding-bottom: 55px
+	// position: absolute
+	bottom: 0
+	width: 100%
+	@include md{padding-top: 48px}
+	@include xs{padding-bottom: 85px}
+	&.slick
+		position: fixed
+		bottom: 0
+		width: 100%
+	.container
+		position: relative
+		color: #e5e5e5
+		font-size: 14px
+		line-height: 22px
+	.copy
+		position: absolute
+		left: 0
+		@include xs{display: none}
+	.column-icons
+		float: left
+		width: 475px
+		@include md{position: absolute
+		right: 0
+		width: 188px
+		bottom: -30px}
+		@include xs{display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		float: none
+		width: 100%
+		padding-left: 15px
+		padding-right: 15px
+		flex-wrap: wrap}
+		.foot-icon
+			margin-bottom: 21px
+			@include md{margin-bottom: 8px}
+			@include xs{margin: 0 16px 14px 0}
+	.column
+		float: left
+		width: 290px
+		padding-bottom: 32px
+		@include md{padding-bottom: 42px}
+		@include xs{font-size: 16px;width: 100%;padding-bottom: 16px;float: none}
+		&:nth-child(3)
+			width: 220px
+			@include xs{width: 100%}
+		&:nth-child(4)
+			float: right
+			width: 186px
+			@include xs{float: none
+			width: 100%
+			padding-bottom: 80px}
+			a
+				color: #fff
+				display: block
+		.name
+			text-transform: uppercase
+			color: #e5e5e5
+			margin-bottom: 14px
+			@include md{margin-bottom: 10px;
+			position: relative}
+			i
+				position: absolute
+				display: none
+				cursor: pointer
+				visibility: hidden
+				font-size: 13px
+				color: #9da6b2
+				top: 6px
+				right: 3px
+				@include xs{display: block}
+				&.active
+					visibility: visible
+		ul
+			@include xs{display: none}
+			li
+				margin-bottom: 7px
+				@include md{margin-bottom: 5px}
+				a
+					color: #9da6b2
+					transition: color 0.4s
+					&:hover,
+					&:active
+						color: #fff
+		.btn
+			color: #fff
+			border-color: #fff
+			margin-bottom: 16px
+			margin-top: 5px
+			@include md{padding-top: 8px;padding-bottom: 8px;margin-bottom: 10px}
+			&:hover,
+			&:active
+				background-color: #fff
+				color: $c-text-dark

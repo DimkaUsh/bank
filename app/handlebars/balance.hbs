@@ -1,0 +1,168 @@
+
+{{> parts/head}}
+
+<body>
+
+	{{> parts/header-2}}
+	{{> parts/mob-menu}}
+
+	<div class="bread">
+		<div class="container">
+			<a href="#">Главная</a>
+			<span class="divider">/</span>
+			<span class="current">Баланс</span>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="column-main column-main-smaller">
+			<h2 class="h2">Баланс 16 000 руб.</h2>
+
+			<div class="orders-in-work">
+				<h3 class="h3">Заявки в обработке:</h3>
+				<div class="order">
+					<div class="cell">
+						<div class="val">№ 1744</div>
+					</div>
+					<div class="cell">
+						<div class="name">Сумма:</div>
+						<div class="val">20 000 руб.</div>
+					</div>
+					<div class="cell">
+						<div class="name">Способ оплаты:</div>
+						<div class="val">Карта Сбербанка</div>
+					</div>
+					<div class="cell">
+						<div class="name">Статус:</div>
+						<div class="val"><span class="blau">В обработке</span></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="summ-to-add">
+					<div class="input-cont anim">
+						<input type="email">
+						<div class="placeholder">Сумма пополнения</div>
+						<div class="underline"></div>
+						<div class="ok">OK</div>
+						<div class="err">ошибка</div>
+						<i class="fa fa-rub"></i>
+					</div>
+				{{!-- <div class="input-cont">
+					<input type="number" placeholder="Сумма пополнения">
+					<i class="fa fa-rub"></i>
+				</div> --}}
+			</div>
+
+			<div class="type-of-pay">
+				<form action="">
+					<div class="types">
+						<div class="type dropdown">
+		  				<label for="manual">
+								<div class="radio-cont">
+					  			<input id="manual" type="radio" name="paytypetype" value="manual">
+								</div>
+								<div class="name">
+									Ручной
+								</div>
+								<div class="desc">
+									Проверка платежа и зачисление средств на баланс происходит в ручном режиме нашим сотрудником. Комиссия отсутствует.
+								</div>
+								<div class="desc-accept">
+									<span class="blau">К оплате принимаем: </span>
+									Карта Сбербанка, Qiwi Кошелёк, Яндекс.Деньги, WebMoney/
+								</div>
+							</label>
+							<div class="dropdown-cont">
+								<div class="text">
+									Для пополнения своего баланса переведите деньги наиболее удобным для вас способом на один из указанных счетов. После успешной отправки средств введите в поле ввода
+									сумму, которую вы перевели, и нажмите кнопку &#xab;Оплатить&#xbb;. Подтверждение оплаты проводим в ручном режиме, это занимает от 5 минут, до нескольких часов.
+								</div>
+								<table>
+									<tr>
+										<td>
+											<label for="type1">
+												<div class="radio-cont">
+									  			<input id="type1" type="radio" name="type" value="manual">
+												</div>
+												Карта Сбербанка
+											</label>
+										</td>
+										<td>4242 4242 4242 4242</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="type2">
+												<div class="radio-cont">
+									  			<input id="type2" type="radio" name="type" value="manual">
+												</div>
+												Qiwi Кошелёк
+											</label>
+										</td>
+										<td>+79029999999</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="type3">
+												<div class="radio-cont">
+									  			<input id="type3" type="radio" name="type" value="manual">
+												</div>
+												Яндекс.Деньги
+											</label>
+										</td>
+										<td>41001173 3328 564</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="type4">
+												<div class="radio-cont">
+									  			<input id="type4" type="radio" name="type" value="manual">
+												</div>
+												WebMoney
+											</label>
+										</td>
+										<td>R123456789456123</td>
+									</tr>
+								</table>
+								<div class="attention">
+									Внимание! Прежде чем нажать кнопку "Оплатить", убедитесь, 
+									что вы перевели нужную сумму на один из указанных выше счетов.
+								</div>
+							</div>
+						</div>
+						<div class="type ">
+			  			<label for="auto">
+								<div class="radio-cont">
+				  				<input id="auto" type="radio" name="paytypetype" value="auto">
+								</div>
+								<div class="name">
+									Автоматический (Яндекс.Деньги)
+								</div>
+								<div class="desc">
+									Плюс метода в экономии времени, т. к. оплата происходит моментально через сервис 
+									<a href="#" class="link-underline">Яндекс.Деньги</a> и средства на баланс зачисляются моментально.
+								</div>	
+							</label>
+						</div>
+					</div>
+					<div class="gray-line"></div>
+					<div class="btns-cont">
+						<input type="button" class="btn btn-big-pad" value="Оплатить">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+
+	{{> parts/footer}}
+
+	{{!-- {{> small_parts/up_btn}} --}}
+	{{!-- {{> small_parts/burger_with_anim}} --}}
+	{{!-- {{> components/tabs tabsContent}} --}}
+	{{!-- {{> components/popup}} --}}
+
+	{{> parts/scripts}}
+
+</body>
+</html>
